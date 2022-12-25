@@ -15,6 +15,7 @@ export const getStaticProps = async() => {
 export default function Home({ blog }) {
   return (
     <div>
+      <p className={styles.top}>misechi blog</p>
       {blog.map((blog) => (
         <li key={blog.id}>
           <Link legacyBehavior href={`blog/${blog.id}`}>
